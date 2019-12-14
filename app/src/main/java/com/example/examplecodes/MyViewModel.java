@@ -10,5 +10,6 @@ import androidx.lifecycle.AndroidViewModel;
 public class MyViewModel extends AndroidViewModel {
     public MyViewModel(@NonNull Application application) {
         super(application);
+        ;
     }
 }
