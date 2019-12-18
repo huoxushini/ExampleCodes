@@ -8,4 +8,27 @@
     <string name="txt_Add">ADD</string>
     <string name="txt_Del">DEL</string>
     <string name="txt_back">Back</string>
+    <string name="txt_toanotheractivity">ToActivity</string>
+    <string name="txtpage2">Page2</string>
+    <string name="txtToPage2">ToPage2</string>
+    <string name="txtNoPara">NoPara</string>
+    <string name="txtWithPara">WithPara</string>
+    <string name="txtExampleName">Tom</string>
+    <string name="txthint">Input your name</string>
+    <string name="lbltime">Timer</string>
+    <string name="lblStart">Start</string>
+    <string name="lblStop">Stop</string>
+    <string name="txt0">0</string>
+    <string name="lblmyview">MyView</string>
+    <string name="lblXY">0:0</string>
+    <string name="lblClear">Clear</string>
+    <string name="btnUndo">Undo</string>
+    <string name="lblBall">Ball</string>
+    <string name="lblsaveload">SaveLoad</string>
+    <string name="lblload">Load</string>
+    <string name="lblSave">Save</string>
+    <string name="lblsavefile">SaveFile</string>
+    <string name="lblLoadFile">LoadFile</string>
+    <string name="lblsavetoexterned">ToExtern</string>
+    <string name="lblfromextern">FromExtern</string>
 </resources>

@@ -25,6 +25,7 @@ public class MainFragment extends Fragment implements  View.OnClickListener {
 
     //绑定页面
     private FragmentMainBinding binding;
+    NavController controller;
     public MainFragment() {
         // Required empty public constructor
     }
@@ -38,16 +39,46 @@ public class MainFragment extends Fragment implements  View.OnClickListener {
         binding= DataBindingUtil.inflate(inflater,R.layout.fragment_main,container,false);
         binding.setLifecycleOwner(requireActivity());
         binding.btnListview.setOnClickListener(this);
+        binding.btnToAnotherActivity.setOnClickListener(this);
+        binding.btnTime.setOnClickListener(this);
+        binding.btnMyview.setOnClickListener(this);
+        binding.btnBall.setOnClickListener(this);
+        binding.btnsaveload.setOnClickListener(this);
         return binding.getRoot();
 
     }
     @Override
     public void onClick(View view) {
+        controller=Navigation.findNavController(view);
         if(view.getId()==binding.btnListview.getId())
         {
             Log.d("liuyu","ListView");
-            NavController controller= Navigation.findNavController(view);
             controller.navigate(R.id.action_mainFragment_to_listviewActivity2);
+            return;
         }
+        if(view.getId()==binding.btnToAnotherActivity.getId())
+        {
+            Log.d("liuyu","ActivityToAcitivity");
+            controller.navigate(R.id.action_mainFragment_to_mainactivitytoactivity);
+            return;
+        }
+        if(view.getId()==binding.btnTime.getId())
+        {
+            controller.navigate(R.id.action_mainFragment_to_timertaskActivity);
+            return;
+        }
+        if(view.getId()==binding.btnMyview.getId())
+        {
+            controller.navigate(R.id.action_mainFragment_to_myActivity);
+            return;
+        }
+        if(view.getId()==binding.btnBall.getId()){
+            controller.navigate(R.id.action_mainFragment_to_l05Myview2);
+            return;
+        }
+        if(view.getId()==binding.btnsaveload.getId()){
+            controller.navigate(R.id.action_mainFragment_to_l06SavereadActivity);
+        }
+
     }
 }

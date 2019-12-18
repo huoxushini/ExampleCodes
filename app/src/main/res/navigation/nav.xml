@@ -9,14 +9,54 @@
         android:id="@+id/mainFragment"
         android:name="com.example.examplecodes.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_listviewActivity2"
             app:destination="@id/listviewActivity2" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainactivitytoactivity"
+            app:destination="@id/mainactivitytoactivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_timertaskActivity"
+            app:destination="@id/timertaskActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_myActivity"
+            app:destination="@id/myActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_l05Myview2"
+            app:destination="@id/l05Myview2" />
+        <action
+            android:id="@+id/action_mainFragment_to_l06SavereadActivity"
+            app:destination="@id/l06SavereadActivity" />
     </fragment>
     <activity
         android:id="@+id/listviewActivity2"
-        android:name="com.example.examplecodes.L01_Listview.ListviewActivity"
+        android:name="com.example.examplecodes.L01ListviewActivity"
         android:label="activity_listview"
         tools:layout="@layout/activity_listview" />
+    <activity
+        android:id="@+id/mainactivitytoactivity"
+        android:name="com.example.examplecodes.L02Mainactivitytoactivity"
+        android:label="activity_mainactivitytoactivity"
+        tools:layout="@layout/activity_mainactivitytoactivity" />
+    <activity
+        android:id="@+id/timertaskActivity"
+        android:name="com.example.examplecodes.L03TimertaskActivity"
+        android:label="activity_timertask"
+        tools:layout="@layout/activity_timertask" />
+    <activity
+        android:id="@+id/myActivity"
+        android:name="com.example.examplecodes.L04MyActivity"
+        android:label="activity_my"
+        tools:layout="@layout/activity_my" />
+    <activity
+        android:id="@+id/l05Myview2"
+        android:name="com.example.examplecodes.L05BallActivity"
+        android:label="activity_l05_myview2"
+        tools:layout="@layout/activity_l05_myview2" />
+    <activity
+        android:id="@+id/l06SavereadActivity"
+        android:name="com.example.examplecodes.L06SavereadActivity"
+        android:label="activity_saveread"
+        tools:layout="@layout/activity_saveread" />
 </navigation>

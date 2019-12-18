@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.examplecodes">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".L01_Listview.ListviewActivity"></activity>
+        <activity android:name=".L07RecyclerActivity"></activity>
+        <activity android:name=".L06SavereadActivity" />
+        <activity android:name=".L05BallActivity" />
+        <activity android:name=".L04MyActivity" />
+        <activity android:name=".L03TimertaskActivity" />
+        <activity android:name=".L02Page2Activity" />
+        <activity android:name=".L02Mainactivitytoactivity" />
+        <activity android:name=".L01ListviewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

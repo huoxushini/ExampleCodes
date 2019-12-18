@@ -1,4 +1,4 @@
-package com.example.examplecodes.L01_Listview;
+package com.example.examplecodes;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -7,18 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
-import com.example.examplecodes.MainActivity;
-import com.example.examplecodes.R;
 import com.example.examplecodes.databinding.ActivityListviewBinding;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-public class ListviewActivity extends AppCompatActivity implements View.OnClickListener {
+public class L01ListviewActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityListviewBinding binding;
     private String[] from={"title"};
     private int[] to={R.id.item_title};
@@ -57,8 +54,9 @@ public class ListviewActivity extends AppCompatActivity implements View.OnClickL
 
         if(view.getId()==binding.btnBack.getId())
         {
+            finish();
             Log.d("liuyu","back to main");
-            Intent intent=new Intent(ListviewActivity.this, MainActivity.class);
+            Intent intent=new Intent(L01ListviewActivity.this, MainActivity.class);
             startActivity(intent);
             return;
         }
@@ -74,5 +72,12 @@ public class ListviewActivity extends AppCompatActivity implements View.OnClickL
             adapter.notifyDataSetChanged();
         }
         binding.list.smoothScrollToPosition(data.size()-1);
+    }
+
+    @Override
+    public void finish() {
+        Toast.makeText(this,"Back",Toast.LENGTH_SHORT).show();
+        //super.finish();
+
     }
 }
